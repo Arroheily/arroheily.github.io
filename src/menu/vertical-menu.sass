@@ -1,0 +1,39 @@
+$color-black: #000;
+$color-black-45: rgba(var($color-black), 45);
+$color-white: #fff;
+$color-red: #dd0a20;
+.ant-menu-inline
+  border-right: 0
+  color: $color-black-45
+
+  .ant-menu-submenu-title
+    font-size: 18px
+
+  .ant-menu-item
+    color: $color-black-45
+
+    &::after
+      background-color: $color-white
+      border-right: 0
+
+    &:hover
+      color: $color-black
+
+    &-active
+      color: $color-black-45
+
+
+    &-selected
+      background-color: $color-white
+      color: $color-black
+
+.ant-menu
+  color: $color-black-45
+
+  &:not(.ant-menu-horizontal)
+    .ant-menu-item-selected
+      background-color: $color-white
+
+  .ant-menu-submenu-title
+    &:hover
+      color: $color-black
