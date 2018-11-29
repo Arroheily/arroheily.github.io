@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import PositionAbsolute from '../page/position-absoulte';
-import PositionMore from '../page/position-more';
+import { Link } from "react-router-dom";
 import './vertical-menu.sass';
 
 const SubMenu = Menu.SubMenu;
@@ -15,8 +13,7 @@ export default class VerticalMenu extends Component {
 
   render() {
     return (
-      <Router>
-        <div>
+      <div className="vertical-menu">
         <Menu
           onClick={ this.handleClick }
           style={ { width: 256 } }
@@ -33,14 +30,14 @@ export default class VerticalMenu extends Component {
                 <Link to='/more'>more</Link>
               </Menu.Item>
             </MenuItemGroup>
+            <MenuItemGroup key="sub1-group2" title="layout">
+              <Menu.Item key="sub1-group2-item1">
+                <Link to='/vertical-middle'>vertical-middle</Link>
+              </Menu.Item>
+            </MenuItemGroup>
           </SubMenu>
         </Menu>
-        <div className="app__templete">
-          <Route path="/more" component={ PositionMore } />
-          <Route path="/absolute" component={ PositionAbsolute } />
-        </div>
-        </div>
-      </Router>
+      </div>
     );
   }
 }
