@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
-import PositionAbsolute from '../page/position-absoulte';
-import PositionMore from '../page/position-more';
-import VerticalMiddle from '../page/layout/vertical-middle';
+import PositionAbsolute from '../../page/templete/position-absolute';
+// import Home from '../../page/home/index';
 
 export default class MenuRouter extends Component {
     render() {
         return (
             <div className="app-templete">
-                <Route path="/more" component={ PositionMore } />
-                <Route path="/vertical-middle" component={ VerticalMiddle } />
+                {/* <Route path="/home" component={ Home } /> */}
                 <Route path="/absolute" component={ PositionAbsolute } />
             </div>
         );

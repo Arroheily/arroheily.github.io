@@ -1,0 +1,17 @@
+@import 'global/color';
+@import 'global/function';
+
+.app {
+  background-color: $color-black;
+  height: rem(32);
+
+  &-menu {
+    width: 100%;
+  }
+
+  &-templete {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 256px);
+  }
+}

@@ -26,15 +26,15 @@ export default class VerticalMenu extends Component {
               <Menu.Item key="sub1-group1-item1">
                 <Link to='/absolute'>absolute & relative</Link>
               </Menu.Item>
-              <Menu.Item key="sub1-group1-item2">
+              {/* <Menu.Item key="sub1-group1-item2">
                 <Link to='/more'>more</Link>
-              </Menu.Item>
+              </Menu.Item> */}
             </MenuItemGroup>
-            <MenuItemGroup key="sub1-group2" title="layout">
+            {/* <MenuItemGroup key="sub1-group2" title="layout">
               <Menu.Item key="sub1-group2-item1">
                 <Link to='/vertical-middle'>vertical-middle</Link>
               </Menu.Item>
-            </MenuItemGroup>
+            </MenuItemGroup> */}
           </SubMenu>
         </Menu>
       </div>
