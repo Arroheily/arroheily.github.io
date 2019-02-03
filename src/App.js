@@ -5,7 +5,8 @@ import './App.scss';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
+        <span className="app__content">test</span>
       </div>
     );
   }
