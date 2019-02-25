@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="app">
         <span className="app__content">test</span>
+        <div className="app__bottom">bottom</div>
       </div>
     );
   }

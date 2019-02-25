@@ -2,9 +2,20 @@
 @import 'global/color';
 @import 'global/font-size';
 
+body {
+  margin: 0;
+}
+
 .app {
   &__content {
     height: rem(16);
     color: $color-red;
+  }
+
+  &__bottom {
+    height: rem(32);
+    background-color: $color-bg-gray;
+    line-height: $type-32px;
+    text-align: center;
   }
 }
