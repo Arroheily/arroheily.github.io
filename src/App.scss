@@ -1,5 +1,10 @@
+@import 'global/function';
+@import 'global/color';
+@import 'global/font-size';
+
 .app {
   &__content {
-    height: rem(36);
+    height: rem(16);
+    color: $color-red;
   }
 }
