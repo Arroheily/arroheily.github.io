@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import HomePageLayout from '../layout/home-page-layout/index';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import RouterList from '../router/index';
 
-export default class Content  extends Component {
+export default class Content extends Component {
   render() {
     return (
+      <Router>
         <div>
-          <HomePageLayout/>
+          <br />
+          <Link to="/two">photoPage</Link>
+          <br />
+          <Link to="/Lists">一个列表</Link>
+          <br />
+          <RouterList />
         </div>
+      </Router>
     );
   }
 }
