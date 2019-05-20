@@ -1,0 +1,51 @@
+@import '../../../global/function';
+@import '../../../global/color';
+@import '../../../global/font-size';
+
+.rolling-page {
+  &__templete {
+    height: rem(700);
+  }
+
+  &__tab {
+    display: inline-block;
+    margin: 0 rem(36) 0 0;
+    position: sticky;
+    top: rem(10);
+
+    &__item {
+      display: block;
+      cursor: pointer;
+      width: rem(65);
+      height: rem(60);
+      border: 1px solid $color-pink;
+      border-radius: rem(4);
+      position: relative;
+      background-color: $color-green;
+
+      // &--one {
+      //   background-color: $color-white;
+      //   opacity: 1;
+      // }
+
+      &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__area {
+    display: inline-block;
+    height: rem(600);
+    vertical-align: top;
+
+    &__item {
+      height: rem(80);
+      border-top: 1px solid $color-pink;
+      border-bottom: 1px solid $color-pink;
+    }
+  }
+}

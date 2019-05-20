@@ -1,0 +1,10 @@
+@import '../../../global/function';
+@import '../../../global/color';
+@import '../../../global/font-size';
+
+.home-page {
+  &__templete {
+    height: rem(300);
+    background-color: $color-pink;
+  }
+}

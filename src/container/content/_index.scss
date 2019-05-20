@@ -1,1 +1,16 @@
-@import 'layout/home-page-layout/index';
+.Link {
+  text-decoration: none;
+  border: 1px solid $color-pink;
+  padding: rem(12) rem(16);
+  margin-bottom: rem(12);
+  margin-right: rem(16);
+  display: inline-block;
+  border-radius: 8px;
+  background-color: $color-pink;
+  color: $color-white;
+  font-size: $type-16px;
+}
+
+.Content {
+  margin: rem(36) rem(24);
+}
