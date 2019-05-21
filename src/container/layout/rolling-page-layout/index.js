@@ -12,6 +12,8 @@ export default class RollingPageLayout  extends Component {
     const elementTwo = document.querySelector('.rolling-page__tab__item--two');
     const elementThree = document.querySelector('.rolling-page__tab__item--three');
     const areaElement = document.querySelector('.rolling-page__area__item--one');
+
+    // 获取当前元素距离可视窗口的高度
     const a = document.querySelector('.rolling-page__area__item--one').getBoundingClientRect().top;
     if( a <= 0 && a > -82){
       const opacityVal = (areaElement.offsetHeight + a)/100;
@@ -19,9 +21,9 @@ export default class RollingPageLayout  extends Component {
       element.style.backgroundColor =  "rgba(56, 178, 166,"+opacityVal+")";
       elementTwo.style.backgroundColor =  "rgba(56, 178, 166,"+opacityValTwo+")";
     } else {
-    element.style.backgroundColor =  "rgba(56, 178, 166, 1)";
-    elementTwo.style.backgroundColor =  "rgba(56, 178, 166, 0)";
-    elementThree.style.backgroundColor =  "rgba(56, 178, 166, 0)";
+      element.style.backgroundColor =  "rgba(56, 178, 166, 1)";
+      elementTwo.style.backgroundColor =  "rgba(56, 178, 166, 0)";
+      elementThree.style.backgroundColor =  "rgba(56, 178, 166, 0)";
     }
   }
 
